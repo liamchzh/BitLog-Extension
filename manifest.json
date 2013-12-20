@@ -4,7 +4,7 @@
     "manifest_version": 2,
     "description": "Login.",
     "icons": { "128": "/static/icons/icon.png" },
-    "background_page": "bg.html",
+    "options_page": "test.html",
     "permissions": [
         "storage"
     ],

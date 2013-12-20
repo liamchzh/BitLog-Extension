@@ -1,5 +1,6 @@
 body {
-  padding-bottom: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #eee;
 }
 
@@ -28,13 +29,13 @@ body {
   z-index: 2;
 }
 .form-signin input[type="text"] {
-  width: 200px;
+  width: 300px;
   margin-bottom: -1px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 .form-signin input[type="password"] {
-  width: 200px;
+  width: 300px;
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
