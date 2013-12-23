@@ -4,9 +4,18 @@
     "manifest_version": 2,
     "description": "Login.",
     "icons": { "128": "/static/icons/icon.png" },
-    "options_page": "test.html",
+    "options_page": "options.html",
     "permissions": [
-        "storage"
+        "storage",
+        "http://*/*",
+        "http://10.0.0.55/cgi-bin/do_login",
+        "http://10.0.0.55/cgi-bin/force_logout"
+    ],
+    "content_scripts": [
+    {
+      "matches": ["http://*/*"],
+      "js": ["static/libs/main.js"]
+    }
     ],
     "browser_action": {
         "default_title": "BitLog",

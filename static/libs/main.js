@@ -29,8 +29,32 @@ require(['jquery', 'md5'], function ($) {
 
   });
 
-  $("#login").click(function () {});
+$(".form-login").ready( function () {
+    var account = localStorage["account"];
+    var pswd = localStorage["pswd"];
+    var pswd_md5 = localStorage["pswd_md5"];
 
-  $("#logout").click(function () {});
-  
-});
+    if(!account || !pswd){
+      return;
+    }
+
+    $("#account1").val(account);
+    $("#pswd1").val(pswd_md5);
+
+  });
+
+$(".form-logout").ready( function () {
+    var account = localStorage["account"];
+    var pswd = localStorage["pswd"];
+    var pswd_md5 = localStorage["pswd_md5"];
+
+    if(!account || !pswd){
+      return;
+    }
+
+    $("#account2").val(account);
+    $("#pswd2").val(pswd);
+
+  });
+
+})
